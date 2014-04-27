@@ -423,6 +423,10 @@
                 this.$.attr('readonly', 'readonly');
             }
 
+            if (this.o.viewOnly) {
+                this.$.attr('readonly', 'readonly');
+            }
+
             if(this.relative) {
                 $(window).resize(function() {
                     s._carve()

@@ -453,6 +453,9 @@
                 this.fgColor = this.o.fgColor;
             }
 
+            if (this.o.viewOnly) {
+                this.$.attr('readonly', 'readonly');
+            }
             return this;
         };
 

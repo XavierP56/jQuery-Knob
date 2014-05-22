@@ -580,6 +580,7 @@
                     v = max(min(v, s.o.max), s.o.min);
 
                     s.val(v, false);
+                    if (s.cH && (s.cH(v) === false)) return;
 
                     if(s.rH) {
                         // Handle mousewheel stop
